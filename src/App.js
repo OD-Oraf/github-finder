@@ -3,15 +3,26 @@ import React, { Component } from 'react';
 // import './App.css';
 
 class App extends Component {
-  render () {
-    return (
-      <div className="App">
-        <h1>Hello from react</h1>
-      </div>
-    );
-  }
+      foo = () => 'bars';
+   render () {
+      const name = 'John Doe';
+      const getJob = () => 'devops';
+      const loading = false;
+      const showName = false;
+
+
+      return (
+         <div className="App">
+            {/*Can add javascript within brackets*/}
+            {loading ? <h4>Loading..... </h4> : <h1>Hello {showName && name.toUpperCase()}</h1>}
+            {/*<h2>Job: {getJob()}</h2>*/}
+            {/*<h2>Foo: {this.foo()}</h2>*/}
+
+         </div>
+      );
+   }
 }
- 
- 
+
+
 
 export default App;

@@ -7,6 +7,7 @@ export class Navbar extends Component {
       icon: 'fab fa-github'
    }
 
+   // type check for props
    static propTypes = {
       title: PropTypes.string.isRequired,
       icon: PropTypes.string.isRequired
